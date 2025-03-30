@@ -30,14 +30,14 @@ A Docker-based stack for integrating **Apache Airflow**, **DataHub**, and **Mong
    ```
 
 3. Access the services:
-   - **Airflow**: [http://localhost:8081](http://localhost:8081) (Username: `admin`, Password: `admin`)
+   - **Airflow**: [http://localhost:8085](http://localhost:8085) (Username: `admin`, Password: `admin`)
    - **DataHub UI**: [http://localhost:9002](http://localhost:9002)
    - **MongoDB**: `mongodb://admin:password@localhost:27017/`
 
 ## Configuration
 
-- Update **MongoDB credentials** in `docker-compose.yml` if necessary.
-- Modify Airflow DAGs in `./airflow/dags/` to define workflows.
+- Update **MongoDB credentials** in `infrastructure/mongodb/docker-compose.yaml` if necessary.
+- Modify Airflow DAGs in `dags/` to define workflows.
 
 ## Stopping Services
 
