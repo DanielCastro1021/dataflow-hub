@@ -1,0 +1,5 @@
+apache-airflow-providers-http
+apache-airflow-providers-sqlite
+acryl-datahub
+acryl-datahub[mongodb]
+pymongo

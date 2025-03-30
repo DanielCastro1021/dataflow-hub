@@ -1,0 +1,14 @@
+source:
+  type: "mongodb"
+  config:
+    connect_uri: "mongodb://host.docker.internal:27017"
+    username: "admin"
+    password: "password"
+    authMechanism: "DEFAULT"
+    enableSchemaInference: true
+    useRandomSampling: true
+    maxSchemaSize: 300
+sink:
+  type: "datahub-rest"
+  config:
+    server: "http://host.docker.internal:8080"
